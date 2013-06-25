@@ -1,0 +1,17 @@
+case $1 in
+xmonad)
+  # for Xmonad session
+  xscreensaver &
+  trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 10 --height 18 --transparent true --alpha 0 --tint 0x000000 &
+  sleep 1
+  wicd-client --tray &
+  sleep 1
+  skype &
+  sleep 1
+  xmenud.py --tray &
+  ;;
+*)
+  # for all other sessions
+  ;;
+esac
+

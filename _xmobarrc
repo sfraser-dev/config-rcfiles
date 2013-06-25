@@ -1,0 +1,20 @@
+Config { font = "-*-Fixed-Bold-R-Normal-*-14-*-*-*-*-*-*-*"
+       , bgColor = "black"
+       , fgColor = "grey"
+       , position = TopW L 90
+       , lowerOnStart = False
+       , border = NoBorder
+       , borderColor = "black"
+       , commands = [ Run Weather "EGPD" ["-t"," <tempC>C","-L","5","-H","15","--normal","green","--high","red","--low","blue"] 100
+                    , Run MultiCpu ["-t","<total0>%/<total1>%","-L","3","-H","50","--normal","green","--high","red"] 10
+                    , Run Memory ["-t","Mem: <usedratio>%"] 10
+                    , Run Date "%a %b %_d %l:%M" "date" 10
+                    , Run Network "eth0" ["-t","<rx>/<tx> kbps","-L","0","-H","32","--normal","green","--high","red"] 10
+                    , Run Com "uname" ["-s","-r"] "" 100
+                    , Run Swap ["-t","<used>/<free>"] 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }{ | Cpu0/1: %multicpu% | %memory% | Down/up: %eth0% | <fc=#ee9a00>%date%</fc> | Temp:%EGPD% | %uname%"
+       }

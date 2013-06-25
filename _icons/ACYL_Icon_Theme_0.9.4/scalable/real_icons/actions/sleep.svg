@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+<defs>
+<defs
+     id="defs3306">
+  </defs>
+  <path
+     id="path-main"
+     d="m 14.651166,2 c -1.1591,2.7784723 -1.767444,5.8539909 -1.767444,9.05925 2e-6,12.821035 10.245278,23.21433 22.88372,23.21433 3.691078,0 7.143872,-0.877524 10.232558,-2.453546 C 42.522711,40.155447 34.362551,45.975113 24.883721,45.975113 12.245279,45.975113 2,35.581817 2,22.760782 2,13.684153 7.1640362,5.8203578 14.651166,2 z" />
+</defs>
+<acyl-settings>
+<linearGradient
+     id="linearGradient4321">
+    <stop
+       style="stop-color:#757575;stop-opacity:1.0;"
+       offset="0.0"
+       id="stop1" />
+  </linearGradient>
+<linearGradient
+     inkscape:collect="always"
+     xlink:href="#linearGradient4321"
+     id="acyl_gradient"
+     x1="50.0%"
+     y1="0.0%"
+     x2="50.0%"
+     y2="100.0%" />
+<filter id="filter1111" x="-50%" y="-50%" width="200%" height="200%">
+	<feImage
+	id="feImage2"
+	xlink:href="#1"
+	result="result1" />
+	<feComposite
+	id="feComposite3633"
+	in="result1"
+	in2="SourceAlpha"
+	operator="out" />
+</filter>
+<defs>
+<use id="1" transform="translate(22.5,22.5) scale(1) translate(-22.5,-22.5)" style="stroke-opacity:1;stroke:url(#acyl_gradient);stroke-width:4" xlink:href="#path-main" />
+</defs>
+<use id="2" transform="translate(22.5,22.5) scale(1) translate(-22.5,-22.5)" style="fill:url(#acyl_gradient);filter:url(#filter1111)" xlink:href="#path-main" />
+</acyl-settings>
+</svg>
