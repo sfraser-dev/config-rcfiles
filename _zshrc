@@ -210,6 +210,9 @@ function pakin() { sudo packer -S --noconfirm --auronly --noedit "$@" ; }
 fortune -s | cowsay
 figlet -c "F E T"
 
+# turn off Gnome-keyring and get rid of its warnings
+unset GNOME_KEYRING_CONTROL
+
 alias diffb="diff --brief"
 alias diffbb="diff --brief --binary"
 alias pof="sudo poweroff" # "sudo visudo" has this as NOPASSWD
