@@ -237,10 +237,8 @@ alias mkdir='mkdir -p -v'
 alias mv=' timeout 8 mv -iv'
 alias rm=' timeout 3 rm -Iv --one-file-system'
 
-# Get color support for 'less'
-#export LESS="--RAW-CONTROL-CHARS"
+# http://unix.stackexchange.com/questions/119/colors-in-man-pages
+# Colored less and man pages using ~/.LESS_TERMCAP
+export LESS="--RAW-CONTROL-CHARS"
 # Use colors for less, man, etc.
-#[[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
-
-# http://nion.modprobe.de/bimg/man.png
-alias man="TERMINFO=~/.terminfo/ LESS=C TERM=mostlike PAGER=less man"
+[[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
