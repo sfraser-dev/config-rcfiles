@@ -441,25 +441,7 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="C-A-e">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Gedit</name>
-        </startupnotify>
-        <command>gedit</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-f">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Firefox</name>
-        </startupnotify>
-        <command>firefox</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-g">
+    <keybind key="W-w">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -468,34 +450,7 @@
         <command>chromium-browser</command>
       </action>
     </keybind>
-    <keybind key="C-A-m">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Midori</name>
-        </startupnotify>
-        <command>midori</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-v">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Terminator</name>
-        </startupnotify>
-        <command>terminator</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-w">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Terminator (light)</name>
-        </startupnotify>
-        <command>terminator -p light</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-t">
+    <keybind key="W-t">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -504,16 +459,16 @@
         <command>terminator</command>
       </action>
     </keybind>
-    <keybind key="C-A-h">
+    <keybind key="W-l">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Thunar</name>
+          <name>Terminator (light)</name>
         </startupnotify>
-        <command>thunar</command>
+        <command>terminator -p light</command>
       </action>
     </keybind>
-    <keybind key="C-A-j">
+    <keybind key="W-f">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -522,7 +477,7 @@
         <command>pcmanfm</command>
       </action>
     </keybind>
-    <keybind key="C-A-d">
+    <keybind key="W-s">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -538,12 +493,13 @@
     <keybind key="W-v">
       <action name="ToggleMaximizeVert"/>
     </keybind>
-    <keybind key="W-i">
+    <keybind key="W-c">
       <action name="MoveToCenter"/>
     </keybind>
     <keybind key="W-m">
       <action name="ToggleMaximizeFull"/>
     </keybind>
+    <!-- MiNimize window, use ALT-TAB to uniconify shaded/iconified window -->
     <keybind key="W-n">
       <action name="Iconify"/>
     </keybind>
@@ -574,7 +530,7 @@
     </keybind>
     <!-- http://melp.nl/2011/01/10-must-have-key-and-mouse-binding-configs-in-openbox/ -->
     <!-- Close window (for pytyle2) -->
-    <keybind key="W-c">
+    <keybind key="W-x">
       <action name="Close"/>
     </keybind>
     <!-- Show the root menu (ESC to close) -->
