@@ -243,4 +243,8 @@ export LESS="--RAW-CONTROL-CHARS"
 # Use colors for less, man, etc.
 [[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
 
-DISABLE_CORRECTION="true"
+# No autocorrect! Older zsh's require
+unsetopt correct_all
+# No autocorrect! Newer zsh's require
+#unsetopt correct
+
