@@ -242,3 +242,5 @@ alias rm=' timeout 3 rm -Iv --one-file-system'
 export LESS="--RAW-CONTROL-CHARS"
 # Use colors for less, man, etc.
 [[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
+
+DISABLE_CORRECTION="true"
