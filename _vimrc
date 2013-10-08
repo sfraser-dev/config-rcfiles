@@ -59,7 +59,7 @@ set laststatus=2
 set number
 " Saves a .X.un~ binary revision file, use ":undo" or "u"in ESC 
 " mode to undo last changes.
-set undofile  
+" set undofile  
 
 " See :help c.vim or :help: perl.vim
 " folding settings: za=fold, zM=fold all, zR=unfold all
