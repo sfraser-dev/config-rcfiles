@@ -1,19 +1,20 @@
 -- Making Awesome commands very simple (and left hand centric)
 -- win-z = cycle tiler
--- win-s = cycle windows through master (win-c the other way)
--- win-x = close window
--- win-a = goto master
+-- win-a = cycle windows through master (win-c the other way)
+-- win-s = cycle through windows
+-- win-q = goto master
 -- win-enter = make master
+-- win-x = close window
 --
 -- win-w = web
 -- win-f = file manager
 -- win-t = terminator
 -- win-y = terminator (light colour)
--- win-e = dmenu (execute command)
 --
 -- win-ctr-r = restart awesome
--- ctrl-printscr = scrot
 -- ctrl-alt-delete = lock screen
+-- ctrl-printscr = scrot
+-- win-e = dmenu (execute command)
 
 
 -- Standard awesome library
@@ -242,7 +243,7 @@ globalkeys = awful.util.table.join(
             awful.client.focus.byidx(1)
         end),
     -- ... cycle through the other way
-    awful.key({ modkey,           }, "s",
+    awful.key({ modkey,           }, "a",
         function ()
             local allclients = awful.client.visible(client.focus.screen)
             for i,v in ipairs(allclients) do
@@ -253,7 +254,7 @@ globalkeys = awful.util.table.join(
             awful.client.focus.byidx(-1)
         end),
     -- for easy left hand control (mimics modkey-j)
-    awful.key({ modkey,           }, "q",
+    awful.key({ modkey,           }, "s",
         function ()
             awful.client.focus.byidx( 1)
             if client.focus then client.focus:raise() end
@@ -282,7 +283,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "e", function () awful.util.spawn("dmenu_run") end),
     awful.key({ "Control", "Mod1" }, "Delete", function () awful.util.spawn("xscreensaver-command -lock") end),
     awful.key({ "Control",        }, "Print", function () awful.util.spawn("scrot") end),
-    awful.key({ modkey,           },  "a", function() client.focus = awful.client.getmaster(); client.focus:raise() end), 
+    awful.key({ modkey,           },  "q", function() client.focus = awful.client.getmaster(); client.focus:raise() end), 
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Control" }, "q", awesome.quit),
 
