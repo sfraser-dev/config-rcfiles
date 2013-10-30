@@ -1,20 +1,24 @@
 -- Making Awesome commands very simple (and left hand centric)
--- win-z = cycle tiler
--- win-a = cycle windows through master (win-c the other way)
--- win-s = cycle through windows
--- win-q = goto master
--- win-enter = make master
--- win-x = close window
+-- modkey-z = cycle tiler
+-- modkey-a = cycle windows through master (modkey-c the other way)
+-- modkey-s = cycle through windows
+-- modkey-q = goto master
+-- modkey-x = close window
+-- modkey-enter = make master
 --
--- win-w = web
--- win-f = file manager
--- win-t = terminator
--- win-y = terminator (light colour)
+-- modkey-w = web
+-- modkey-f = file manager
+-- modkey-t = terminator
+-- modkey-y = terminator (light colour)
 --
--- win-ctr-r = restart awesome
+-- modkey-m = maximise toggle
+-- modkey-n = minimise
+-- modkey-shift-n = un-minimise
+-- modkey-ctr-r = restart awesome
+-- modkey-ctr-q = quit awesome (logout)
+-- modkey-e = dmenu (execute command)
 -- ctrl-alt-delete = lock screen
 -- ctrl-printscr = scrot
--- win-e = dmenu (execute command)
 
 
 -- Standard awesome library
@@ -374,9 +378,9 @@ end
 
 clientbuttons = awful.util.table.join(
     awful.button({ }, 1, function (c) client.focus = c; c:raise() end),
-    -- awful.button({ modkey }, 1, awful.mouse.client.move),
-    -- Use Alt-button2 to paste highlighted text
-    awful.button({}, 2, awful.mouse.client.move),
+    awful.button({ modkey }, 1, function (c) c.maximized_horizontal = not c.maximized_horizontal; c.maximized_vertical = not c.maximized_vertical; end),
+    -- Use alt-button2 to paste highlighted text if you remove the modkey
+    awful.button({ modkey }, 2, awful.mouse.client.move),
     awful.button({ modkey }, 3, awful.mouse.client.resize))
 
 -- Set keys
