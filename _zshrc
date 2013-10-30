@@ -143,7 +143,7 @@ zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 zstyle ':completion:*:killall:*' command 'ps -u $USER -o cmd'
 zstyle ':completion:*' menu select # from arch
  
-## History stuffs
+## History stuff
 HISTFILE=~/.zsh-histfile
 HISTSIZE=5000
 SAVEHIST=5000
@@ -223,6 +223,8 @@ alias updb="sudo updatedb"
 alias loc="nocorrect locate"
 alias ob="cd ~/.config/openbox"
 alias obr="openbox --reconfigure"
+alias aw="cd ~/.config/awesome"
+alias awr="echo 'awesome.restart()' | awesome-client 2> /dev/null"
 alias aptud="sudo apt-get update"
 alias aptug="sudo apt-get --yes --force-yes upgrade"
 alias aptup="aptud; aptug"
