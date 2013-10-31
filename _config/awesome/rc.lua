@@ -60,7 +60,8 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
-beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+--beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+beautiful.init("/home/stewart/.config/awesome/beautiful/wwii.lua")
 
 -- This is used later as the default terminal and editor to run.
 --terminal = "x-terminal-emulator"
@@ -285,7 +286,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "w", function () awful.util.spawn("chromium-browser") end),
     awful.key({ modkey,           }, "f", function () awful.util.spawn("pcmanfm") end),
     awful.key({ modkey,           }, "e", function () awful.util.spawn("dmenu_run") end),
-    awful.key({ "Control", "Mod1" }, "Delete", function () awful.util.spawn("xscreensaver-command -lock") end),
+    awful.key({ "Control", "Mod1" }, "l", function () awful.util.spawn("xscreensaver-command -lock") end),
     awful.key({ "Control",        }, "Print", function () awful.util.spawn("scrot") end),
     awful.key({ modkey,           },  "q", function() client.focus = awful.client.getmaster(); client.focus:raise() end), 
     awful.key({ modkey, "Control" }, "r", awesome.restart),
@@ -378,9 +379,9 @@ end
 
 clientbuttons = awful.util.table.join(
     awful.button({ }, 1, function (c) client.focus = c; c:raise() end),
-    awful.button({ modkey }, 1, function (c) c.maximized_horizontal = not c.maximized_horizontal; c.maximized_vertical = not c.maximized_vertical; end),
+    awful.button({ modkey }, 1, awful.mouse.client.move),
     -- Use alt-button2 to paste highlighted text if you remove the modkey
-    awful.button({ modkey }, 2, awful.mouse.client.move),
+    awful.button({ modkey }, 2, function (c) c.maximized_horizontal = not c.maximized_horizontal; c.maximized_vertical = not c.maximized_vertical; end),
     awful.button({ modkey }, 3, awful.mouse.client.resize))
 
 -- Set keys
@@ -438,3 +439,8 @@ end)
 client.add_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+
+-- start xscreensaver on awesome startup
+awful.util.spawn_with_shell("xscreensaver -nosplash")
+-- lxappearance changes are not sticking, using gtk-chtheme,
+-- ~/.gtkrc-2.0 and ~/.gtkrc.mine to change the theme and icons
