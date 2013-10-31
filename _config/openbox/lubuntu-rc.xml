@@ -449,7 +449,7 @@
         <command>terminator</command>
       </action>
     </keybind>
-    <keybind key="W-l">
+    <keybind key="W-y">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -540,6 +540,10 @@
     <!-- http://melp.nl/2011/01/10-must-have-key-and-mouse-binding-configs-in-openbox/ -->
     <!-- Close window (for pytyle2) -->
     <keybind key="W-x">
+      <action name="Close"/>
+    </keybind>
+    <!-- For closing windows in pytyle2 -->
+    <keybind key="A-x">
       <action name="Close"/>
     </keybind>
     <!-- Show the root menu (ESC to close) -->
