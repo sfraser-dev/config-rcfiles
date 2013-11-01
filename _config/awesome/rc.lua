@@ -314,7 +314,8 @@ globalkeys = awful.util.table.join(
 
     -- Standard program
     awful.key({ modkey,           }, "t", function () awful.util.spawn("lxterminal") end),
-    awful.key({ modkey,           }, "y", function () awful.util.spawn("urxvt") end),
+    awful.key({ modkey,           }, "y", function () awful.util.spawn("sakura") end),
+    awful.key({ modkey,           }, "u", function () awful.util.spawn("urxvt") end),
     awful.key({ modkey,           }, "w", function () awful.util.spawn("chromium-browser") end),
     awful.key({ modkey,           }, "f", function () awful.util.spawn("pcmanfm") end),
     awful.key({ modkey,           }, "e", function () awful.util.spawn("dmenu_run") end),

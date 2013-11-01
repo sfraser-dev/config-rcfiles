@@ -458,6 +458,15 @@
         <command>terminator -p light</command>
       </action>
     </keybind>
+    <keybind key="W-u">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Urxvt</name>
+        </startupnotify>
+        <command>urxvt</command>
+      </action>
+    </keybind>
     <keybind key="W-f">
       <action name="Execute">
         <startupnotify>
