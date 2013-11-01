@@ -223,6 +223,8 @@ alias updb="sudo updatedb"
 alias loc="nocorrect locate"
 alias ob="cd ~/.config/openbox"
 alias obr="openbox --reconfigure"
+# MenuMaker generating ~/.config/openbox/menu.xml
+alias obm="mmaker -vf OpenBox3; sleep 0.35; obr"
 alias aw="cd ~/.config/awesome"
 alias awr="echo 'awesome.restart()' | awesome-client 2> /dev/null"
 alias aptud="sudo apt-get update"
