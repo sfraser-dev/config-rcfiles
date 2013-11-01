@@ -1,4 +1,4 @@
--- Making Awesome commands very simple (and left hand centric)
+-- Making Awesome commands simple to use (and left hand centric) and remember
 -- modkey-z = cycle tiler
 -- modkey-a = cycle windows through master (modkey-c the other way)
 -- modkey-s = cycle through windows
