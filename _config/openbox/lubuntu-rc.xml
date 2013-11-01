@@ -322,16 +322,6 @@
         <direction>down</direction>
       </action>
     </keybind>
-    <!-- Keybindings for running applications on Home + E -->
-    <keybind key="W-e">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>PCManFM</name>
-        </startupnotify>
-        <command>pcmanfm</command>
-      </action>
-    </keybind>
     <!-- Keybindings for running Run menu from Lxpanel on Home + R-->
     <keybind key="W-r">
       <action name="Execute">
@@ -459,13 +449,22 @@
         <command>terminator</command>
       </action>
     </keybind>
-    <keybind key="W-l">
+    <keybind key="W-y">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
           <name>Terminator (light)</name>
         </startupnotify>
         <command>terminator -p light</command>
+      </action>
+    </keybind>
+    <keybind key="W-u">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Urxvt</name>
+        </startupnotify>
+        <command>urxvt</command>
       </action>
     </keybind>
     <keybind key="W-f">
@@ -477,7 +476,7 @@
         <command>pcmanfm</command>
       </action>
     </keybind>
-    <keybind key="W-s">
+    <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -503,7 +502,7 @@
     <keybind key="W-n">
       <action name="Iconify"/>
     </keybind>
-    <!-- Archbang / Crunchbang inspired quasi-tiling
+    <!-- Archbang / Crunchbang inspired quasi-tiling -->
     <keybind key="W-Left">
       <action name="MoveToEdgeWest"/>
     </keybind>
@@ -516,8 +515,7 @@
     <keybind key="W-Down">
       <action name="MoveToEdgeSouth"/>
     </keybind>
--->
-    <!-- Original Lubuntu keybindings for quasi-tiling -->
+    <!-- Original Lubuntu keybindings for quasi-tiling 
     <keybind key="W-Left">        # HalfLeftScreen
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo"><x>0</x><y>0</y><height>97%</height><width>50%</width></action>
@@ -534,6 +532,7 @@
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo"><x>0</x><y>-0</y><width>100%</width><height>50%</height></action>
     </keybind>
+-->
     <!-- Move window around like a slinky -->
     <keybind key="A-W-Left">
       <action name="GrowToEdgeWest"/>
@@ -550,6 +549,10 @@
     <!-- http://melp.nl/2011/01/10-must-have-key-and-mouse-binding-configs-in-openbox/ -->
     <!-- Close window (for pytyle2) -->
     <keybind key="W-x">
+      <action name="Close"/>
+    </keybind>
+    <!-- For closing windows in pytyle2 -->
+    <keybind key="A-x">
       <action name="Close"/>
     </keybind>
     <!-- Show the root menu (ESC to close) -->
@@ -963,8 +966,12 @@
     <!-- You can specify more than one menu file in here and they are all loaded,
        just don't make menu ids clash or, well, it'll be kind of pointless -->
     <!-- default menu file (or custom one in $HOME/.config/openbox/) -->
+<<<<<<< HEAD
     <!--<file>/usr/share/lubuntu/openbox/menu.xml</file>-->
     <file>/home/stewart/.config/openbox/menu.xml</file>
+=======
+    <file>$HOME/.config/openbox/menu.xml</file>
+>>>>>>> 46dd95d6846b9c1f13229de2680b6cbaa2527971
     <file>menu.xml</file>
     <hideDelay>200</hideDelay>
     <!-- if a press-release lasts longer than this setting (in milliseconds), the

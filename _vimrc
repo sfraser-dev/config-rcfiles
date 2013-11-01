@@ -73,9 +73,9 @@ set foldlevel=1             " this is just what i use
                             " copying and pasting, even with the <F2> i
                             " paste no indent option
 
-" No \v when searching
-"nnoremap / /\v
-"vnoremap / /\v
+" No \v when searching, make vim use normal regex
+nnoremap / /\v
+vnoremap / /\v
 
 " Better searching
 set ignorecase
