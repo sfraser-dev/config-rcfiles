@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Onyx</name>
+    <name>Onyx-Citrus</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -503,7 +503,7 @@
     <keybind key="W-n">
       <action name="Iconify"/>
     </keybind>
-<!-- Archbang / Crunchbang inspired quasi-tiling
+    <!-- Archbang / Crunchbang inspired quasi-tiling
     <keybind key="W-Left">
       <action name="MoveToEdgeWest"/>
     </keybind>
@@ -520,39 +520,19 @@
     <!-- Original Lubuntu keybindings for quasi-tiling -->
     <keybind key="W-Left">        # HalfLeftScreen
       <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
-        <height>97%</height>
-        <width>50%</width>
-      </action>
+      <action name="MoveResizeTo"><x>0</x><y>0</y><height>97%</height><width>50%</width></action>
     </keybind>
     <keybind key="W-Right">        # HalfRightScreen
       <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>-0</x>
-        <y>0</y>
-        <height>97%</height>
-        <width>50%</width>
-      </action>
+      <action name="MoveResizeTo"><x>-0</x><y>0</y><height>97%</height><width>50%</width></action>
     </keybind>
     <keybind key="W-Up">        # HalfUpperScreen
       <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>0</y>
-        <width>100%</width>
-        <height>50%</height>
-      </action>
+      <action name="MoveResizeTo"><x>0</x><y>0</y><width>100%</width><height>50%</height></action>
     </keybind>
     <keybind key="W-Down">        # HalfLowerScreen
       <action name="UnmaximizeFull"/>
-      <action name="MoveResizeTo">
-        <x>0</x>
-        <y>-0</y>
-        <width>100%</width>
-        <height>50%</height>
-      </action>
+      <action name="MoveResizeTo"><x>0</x><y>-0</y><width>100%</width><height>50%</height></action>
     </keybind>
     <!-- Move window around like a slinky -->
     <keybind key="A-W-Left">
@@ -983,7 +963,8 @@
     <!-- You can specify more than one menu file in here and they are all loaded,
        just don't make menu ids clash or, well, it'll be kind of pointless -->
     <!-- default menu file (or custom one in $HOME/.config/openbox/) -->
-    <file>/usr/share/lubuntu/openbox/menu.xml</file>
+    <!--<file>/usr/share/lubuntu/openbox/menu.xml</file>-->
+    <file>/home/stewart/.config/openbox/menu.xml</file>
     <file>menu.xml</file>
     <hideDelay>200</hideDelay>
     <!-- if a press-release lasts longer than this setting (in milliseconds), the
