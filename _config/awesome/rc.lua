@@ -69,6 +69,9 @@ terminal = "xterm"
 editor = "vim"
 editor_cmd = terminal .. " -e " .. editor
 
+-- xcompmgr for true transparency (not playing nice with terminator)
+awful.util.spawn_with_shell("xcompmgr &")
+
 -- Default modkey.
 -- Usually, Mod4 is the key with a logo between Control and Alt.
 -- If you do not like this or do not have such a key,
@@ -310,8 +313,8 @@ globalkeys = awful.util.table.join(
         end),
 
     -- Standard program
-    awful.key({ modkey,           }, "t", function () awful.util.spawn("terminator") end),
-    awful.key({ modkey,           }, "y", function () awful.util.spawn("terminator -p light") end),
+    awful.key({ modkey,           }, "t", function () awful.util.spawn("lxterminal") end),
+    awful.key({ modkey,           }, "y", function () awful.util.spawn("urxvt") end),
     awful.key({ modkey,           }, "w", function () awful.util.spawn("chromium-browser") end),
     awful.key({ modkey,           }, "f", function () awful.util.spawn("pcmanfm") end),
     awful.key({ modkey,           }, "e", function () awful.util.spawn("dmenu_run") end),
@@ -470,6 +473,7 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 -- }}}
 
 -- start xscreensaver on awesome startup
-awful.util.spawn_with_shell("xscreensaver -nosplash")
+awful.util.spawn_with_shell("xscreensaver -nosplash &")
 -- lxappearance changes are not sticking, using gtk-chtheme,
 -- ~/.gtkrc-2.0 and ~/.gtkrc.mine to change the theme and icons
+
