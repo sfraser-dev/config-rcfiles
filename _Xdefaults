@@ -1,3 +1,4 @@
+! urxvt (rxvt-unicode)
 !------------------------------------------------------------------------------
 ! c o l o r -  s e t t i n g s
 
@@ -6,20 +7,26 @@
 
 ! Default
 ! 0: black
-*color0:  #222222
-*color8:  #222222
+!*color0:  #222222
+!*color8:  #222222
+*color0:  #4c4c4c
+*color8:  #4c4c4c
 ! 1: red
 *color1:  #9f6767
 *color9:  #9f6767
 ! 2: green
-*color2:  #92ac68
-*color10: #92ac68
+!*color2:  #92ac68
+!*color10: #92ac68
+*color2:  #8ba870
+*color10: #8ba870
 ! 3: yellow
 *color3:  #d0d293
 *color11: #d0d293
 ! 4: blue
-*color4:  #9aacc3
-*color12: #9aacc3
+!*color4:  #9aacc3
+!*color12: #9aacc3
+*color4:  #388e8e
+*color12: #388e8e
 ! 5: magenta
 *color5:  #bb77a4
 *color13: #bb77a4
@@ -34,9 +41,13 @@
 ! u r x v t
 
 URxvt*geometry:         112x22  
-! URxvt*font:            xft:terminus:size=8
+!URxvt*font:            xft:terminus:size=8
 urxvt*font:             xft:Bitstream Vera Sans Mono:pixelsize=12
-URxvt*urlLauncher:         firefox  
+URxvt*urlLauncher:      chromium-browser
 URxvt*scrollBar:        false
-URxvt*scrollBar_right:        true
-URxvt*scrollColor:        #000000
+URxvt*scrollBar_right:  true
+URxvt*scrollColor:      #000000
+
+! true transparency
+URxvt.depth:            32
+URxvt.background:       [85]#222222
