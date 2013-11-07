@@ -31,6 +31,7 @@ require("beautiful")
 require("naughty")
 -- Applications menu
 require('freedesktop.utils')
+require('beautiful/arch-blue-solarboymatt/colors')
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -60,7 +61,8 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
 --beautiful.init("/usr/share/awesome/themes/default/theme.lua")
-beautiful.init("/home/stewart/.config/awesome/beautiful/wwii.lua")
+beautiful.init(awful.util.getdir("config") .. "/beautiful/wwii.lua")
+beautiful.init(awful.util.getdir("config") .. "/beautiful/arch-blue-solarboymatt/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 --terminal = "x-terminal-emulator"
