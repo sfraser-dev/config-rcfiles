@@ -78,7 +78,8 @@ theme.titlebar_maximized_button_focus_active  = "/usr/share/awesome/themes/defau
 -- You can use your own command to set your wallpaper
 --theme.wallpaper_cmd = { "awsetbg /usr/share/awesome/themes/default/background.png" }
 --theme.wallpaper_cmd = { "awsetbg -f /home/stewart/Pictures/wallpapers/Dark-Abstract-Wallpaper-1.jpg" }
-theme.wallpaper_cmd = { "awsetbg -f /home/stewart/Pictures/wallpapers/summer_beach_scene-wallpaper-1920x1200.jpg" }
+--theme.wallpaper_cmd = { "awsetbg -f /home/stewart/Pictures/wallpapers/summer_beach_scene-wallpaper-1920x1200.jpg" }
+theme.wallpaper_cmd = { "awsetbg -f /home/stewart/Pictures/wallpapers/forum_wallpaperuk.jpg" }
 --theme.wallpaper_cmd = { "nitrogen --restore &" }
 
 -- You can use your own layout icons like this:
