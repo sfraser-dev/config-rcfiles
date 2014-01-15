@@ -209,6 +209,8 @@ function pakin() { sudo packer -S --noconfirm --auronly --noedit "$@" ; }
 /usr/bin/archey         # run archey
 fortune -s | cowsay
 figlet -c "F E T"
+# Get rid of corrupt .zsh-histfile warning caused by lines with excess ampersands
+mv ~/.zsh-histfile ~/.zsh-tmp; grep -Ev "@@@@@@@@@@@@@@@@@@@@@@@" ~/.zsh-tmp > ~/.zsh-histfile; rm ~/.zsh-tmp
 
 # turn off Gnome-keyring and get rid of its warnings
 unset GNOME_KEYRING_CONTROL
