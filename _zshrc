@@ -237,6 +237,7 @@ alias pacup="sudo pacman -Syu --noconfirm"
 alias pakup="sudo packer -Syu --noconfirm --noedit --auronly"
 alias pup="pacup; pakup"
 alias bc="bc -l"
+alias ver="cat /etc/*-release"
 
 # Arch general recommendations
 alias grep='grep --color=auto'
