@@ -238,6 +238,7 @@ alias pakup="sudo packer -Syu --noconfirm --noedit --auronly"
 alias pup="pacup; pakup"
 alias bc="bc -l"
 alias ver="cat /etc/*-release; uname -m | xargs echo 'Linux kernel is:'"
+alias rot="xrandr -o left"
 
 # Arch general recommendations
 alias grep='grep --color=auto'
