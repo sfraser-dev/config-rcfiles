@@ -206,9 +206,9 @@ function pacin() { sudo pacman -S --noconfirm "$@" ; }
 function pakin() { sudo packer -S --noconfirm --auronly --noedit "$@" ; }
 
 #/usr/bin/screenfetch    # run screenfetch 
-/usr/bin/archey         # run archey
-fortune -s | cowsay
-figlet -c "F E T"
+#/usr/bin/archey         # run archey
+#fortune -s | cowsay
+#figlet -c "F E T"
 # Get rid of corrupt .zsh-histfile warning caused by lines with excess ampersands
 mv ~/.zsh-histfile ~/.zsh-tmp; grep -Ev "@@@@@@@@@@@@@@@@@@@@@@@" ~/.zsh-tmp > ~/.zsh-histfile; rm ~/.zsh-tmp
 
