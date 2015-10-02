@@ -242,6 +242,7 @@ alias ver="cat /etc/lsb-release; cat /etc/os-release; cat /etc/upstream-release/
 alias rot="xrandr --output VGA-0 --rotate left"
 alias rot0="xrandr --output VGA-0 --rotate left"
 alias rot1="xrandr --output VGA-1 --rotate left"
+alias kbgb="setxkbmap -layout gb"
 
 # Arch general recommendations
 alias grep='grep --color=auto'
