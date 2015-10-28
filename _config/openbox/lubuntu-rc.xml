@@ -449,6 +449,15 @@
         <command>terminator</command>
       </action>
     </keybind>
+    <keybind key="C-A-t">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Terminal</name>
+        </startupnotify>
+        <command>terminator</command>
+      </action>
+    </keybind>
     <keybind key="W-y">
       <action name="Execute">
         <startupnotify>
