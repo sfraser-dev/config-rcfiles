@@ -107,10 +107,18 @@ theme_precmd () {
 ##----------------------------------
 #PROMPT='%{$fg[magenta]%}$(toon)%{$reset_color%} %~/ %{$reset_color%}${vcs_info_msg_0_}%{$reset_color%}'
 ##----------------------------------
+## 
+## Different prompt for root
+## http://unix.stackexchange.com/questions/1397/change-prompt-color-depending-on-user-or-root-in-zsh
+## %(x.true.false) where "x" is tested, do true if true and false if not. "!" is true if the shell is priliged.
+## Wrap around two prompts so different prompts for root and normal users (but both using zsh).
 setopt prompt_subst
 PROMPT='
+%(!.
+${fg_red}┌[${fg_red}%n@%m${at_underloff}${fg_yellow}[${fg_yellow}%~${fg_yellow}]
+${fg_red}└[${fg_red}root${fg_red}]%{$reset_color%}${vcs_info_msg_0_}%{$reset_color%}${fg_red}##### %{$reset_color%}.
 ${fg_purple}┌[${fg_green}%n@%m${at_underloff}${fg_cyan}[${fg_cyan}%~${fg_cyan}]
-${fg_purple}└[${fg_green}%T${fg_purple}]%{$reset_color%}${vcs_info_msg_0_}%{$reset_color%}${fg_purple}----> %{$reset_color%}'
+${fg_purple}└[${fg_green}%T${fg_purple}]%{$reset_color%}${vcs_info_msg_0_}%{$reset_color%}${fg_purple}----$ %{$reset_color%})'
 #${fg_purple}┌[${fg_green}%n@${at_underl}%m${at_underloff}${fg_cyan}[${fg_cyan}%~${fg_cyan}]
 #${fg_purple}└[${fg_green}%T${fg_purple}]%{$reset_color%}${vcs_info_msg_0_}%{$reset_color%}${fg_purple}----> %{$reset_color%}'
 ##${fg_purple}┌[${fg_green}%n@${at_underl}%m${at_underloff}${fg_cyan}[${fg_cyan}%~${fg_cyan}]
