@@ -116,7 +116,7 @@ setopt prompt_subst
 PROMPT='
 %(!.
 ${fg_red}┌[${fg_red}%n@%m${at_underloff}${fg_red}[${fg_red}%~${fg_red}]
-${fg_red}└[${fg_red}root${fg_red}]%{$reset_color%}${vcs_info_msg_0_}%{$reset_color%}${fg_red}##### %{$reset_color%}.
+${fg_red}└[${fg_red}root${fg_red}]%{$reset_color%}${vcs_info_msg_0_}%{$reset_color%}${fg_red}----# %{$reset_color%}.
 ${fg_purple}┌[${fg_green}%n@%m${at_underloff}${fg_cyan}[${fg_cyan}%~${fg_cyan}]
 ${fg_purple}└[${fg_green}%T${fg_purple}]%{$reset_color%}${vcs_info_msg_0_}%{$reset_color%}${fg_purple}----$ %{$reset_color%})'
 #${fg_purple}┌[${fg_green}%n@${at_underl}%m${at_underloff}${fg_cyan}[${fg_cyan}%~${fg_cyan}]
