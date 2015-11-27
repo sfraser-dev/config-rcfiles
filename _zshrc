@@ -225,6 +225,8 @@ mv ~/.zsh-histfile ~/.zsh-tmp; grep -Ev "@@@@@@@@@@@@@@@@@@@@@@@" ~/.zsh-tmp > ~
 # turn off Gnome-keyring and get rid of its warnings
 unset GNOME_KEYRING_CONTROL
 
+alias ac="archey"
+alias sf="screenfetch"
 alias diffb="diff --brief"
 alias diffbb="diff --brief --binary"
 alias pof="sudo poweroff" # "sudo visudo" has this as NOPASSWD
