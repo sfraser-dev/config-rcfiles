@@ -254,6 +254,9 @@ alias ver="if [ -f /etc/lsb-release ]; then cat /etc/lsb-release; fi ; cat /etc/
 alias rot="xrandr -q" 
 alias rot0="xrandr --output VGA-0 --rotate left"
 alias rot1="xrandr --output VGA-1 --rotate left"
+alias rot0d="xrandr --output DVI-I-0 --rotate left"
+alias rot1d="xrandr --output DVI-I-1 --rotate left"
+alias rot2d="xrandr --output DVI-I-2 --rotate left"
 alias kbgb="setxkbmap -layout gb"
 
 # Arch general recommendations
