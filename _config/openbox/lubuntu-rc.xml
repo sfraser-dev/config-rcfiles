@@ -441,6 +441,15 @@
         <command>chromium</command>
       </action>
     </keybind>
+    <keybind key="W-i">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Firefox</name>
+        </startupnotify>
+        <command>firefox</command>
+      </action>
+    </keybind>
     <!-- sudo apt-get install guake -->
     <!-- guake -p to config the drop down terminal -->
     <!-- to autostart: .config/autostart/guake.desktop -->
