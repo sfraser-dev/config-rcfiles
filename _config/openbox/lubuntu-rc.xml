@@ -437,9 +437,14 @@
           <enabled>true</enabled>
           <name>Chromium</name>
         </startupnotify>
-        <command>chromium-browser</command>
+        <!-- command>chromium-browser</command -->
+        <command>chromium</command>
       </action>
     </keybind>
+    <!-- sudo apt-get install guake -->
+    <!-- guake -p to config the drop down terminal -->
+    <!-- to autostart: .config/autostart/guake.desktop -->
+    <!-- F12 is the default keybinding to toggle guake terminal --> 
     <keybind key="W-t">
       <action name="Execute">
         <startupnotify>
