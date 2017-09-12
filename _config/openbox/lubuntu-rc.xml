@@ -445,6 +445,9 @@
     <!-- guake -p to config the drop down terminal -->
     <!-- to autostart: .config/autostart/guake.desktop -->
     <!-- F12 is the default keybinding to toggle guake terminal --> 
+    <!-- extra for lubuntu (not debiain):
+        start - preferences - default apps lxsession -
+        autostart - disable autostarted apps: NO -->
     <keybind key="W-t">
       <action name="Execute">
         <startupnotify>
