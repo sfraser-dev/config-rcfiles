@@ -120,7 +120,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>2</number>
     <firstdesk>1</firstdesk>
     <names>
       <!-- set names up here if you want to, like this:
@@ -437,8 +437,7 @@
           <enabled>true</enabled>
           <name>Chromium</name>
         </startupnotify>
-        <!-- command>chromium-browser</command -->
-        <command>chromium</command>
+        <command>chromium-browser</command>
       </action>
     </keybind>
     <keybind key="W-i">
@@ -453,10 +452,10 @@
     <!-- sudo apt-get install guake -->
     <!-- guake -p to config the drop down terminal -->
     <!-- to autostart: .config/autostart/guake.desktop -->
-    <!-- F12 is the default keybinding to toggle guake terminal --> 
+    <!-- F12 is the default keybinding to toggle guake terminal -->
     <!-- extra for lubuntu (not debiain):
-        start - preferences - default apps lxsession -
-        autostart - disable autostarted apps: NO -->
+    start - preferences - default apps lxsession -
+    autostart - disable autostarted apps: NO -->
     <keybind key="W-t">
       <action name="Execute">
         <startupnotify>
@@ -491,6 +490,15 @@
           <name>Urxvt</name>
         </startupnotify>
         <command>urxvt</command>
+      </action>
+    </keybind>
+    <keybind key="W-p">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>LXTerminal</name>
+        </startupnotify>
+        <command>lxterminal</command>
       </action>
     </keybind>
     <keybind key="W-f">
